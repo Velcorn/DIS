@@ -1,11 +1,6 @@
-import os
 import time
 import threading
 import random
-
-# Clear/Remove log on each program start.
-if os.path.exists("log.txt"):
-    os.remove("log.txt")
 
 
 # Initialize a buffer, a list of LSNs and a list of taids.
