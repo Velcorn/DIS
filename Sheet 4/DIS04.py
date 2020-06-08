@@ -1,52 +1,66 @@
+import os
 import time
 import threading
 import random
 
+# Clear/Remove log on each program start.
+if os.path.exists("log.txt"):
+    os.remove("log.txt")
+
+
+# Initialize a buffer, a list of LSNs and a list of taids.
 buffer = []
 lsns = []
-transactions = []
+taids = []
 
 
+# Create a taid for a transaction and return it.
 def begin_transaction():
-    if not transactions:
+    if not taids:
         taid = 1
+        taids.append(taid)
     else:
-        taid = transactions[-1]
-    transactions.append(taid + 1)
+        taid = taids[-1]
+    taids.append(taid + 1)
     return taid
 
 
+# Write data to the buffer or to its text file based on taid.
 def write(taid, pid):
-    data = ["foo", "bar", "hello", "world", "random"]
-    string = data[random.choice(range(4))]
+    strings = ["foo", "bar", "hello", "world", "random"]
+    string = strings[random.choice(range(5))]
     log(taid, pid, string)
     buffer.append([taid, pid, string])
+
+    # If more than 5 datasets in buffer, get those that have already been committed.
+    data = []
     if len(buffer) > 5:
-        with open("log.txt", "r") as f:
-            lines = f.readlines()
-            for e in buffer:
-                for line in lines:
-                    items = line.split(",")
-                    if str(e[1]) == items[1] and items[3] == "EOT":
-                        commit(items[1], items[2])
-                        buffer.remove(e)
+        for e in buffer:
+            if e[0] not in taids:
+                data.append(e)
+                buffer.remove(e)
+
+    # Write those datasets to their corresponding text files.
+    for d in data:
+        with open(str(d[1]) + ".txt", "w") as f:
+            f.write(str(d[0]) + "," + d[2])
 
 
+# Commit a transaction by logging it and removing its ID from the taid list.
 def commit(taid):
     log(taid, 0, "EOT")
-    for e in buffer:
-        if e[0] == taid:
-            index = buffer.index(e)
-            with open(str(buffer[index][1]) + ".txt", "w") as f:
-                f.write(str(buffer[index][0]) + "," + buffer[index][2])
+    taids.remove(taid)
 
 
+# Log an entry of a transaction.
 def log(taid, pid, data):
     if not lsns:
         lsn = 1
     else:
         lsn = lsns[-1]
     lsns.append(lsn + 1)
+
+    # Discern write operations and EOTs.
     if pid != 0:
         with open("log.txt", "a") as f:
             f.write(str(lsn) + "," + str(taid) + "," + str(pid) + "," + str(data) + "\n")
@@ -55,17 +69,19 @@ def log(taid, pid, data):
             f.write(str(lsn) + "," + str(taid) + "," + str(data) + "\n")
 
 
+# Run function for clients.
 def run():
     taid = begin_transaction()
     name = client.getName()
     pids = range(int(name + "0"), int(name + "9"))
-    for _ in range(random.choice(range(1, 5))):
+    for _ in range(random.choice(range(5))):
         pid = random.choice(pids)
         write(taid, pid)
         time.sleep(random.choice(range(3)))
     commit(taid)
 
 
+# Create threads for clients to run concurrently.
 clients = []
 for i in range(5):
     client = threading.Thread(target=run)
