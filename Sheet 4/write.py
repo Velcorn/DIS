@@ -38,7 +38,7 @@ def write(taid, pid):
     # Write those datasets to their corresponding text files.
     for d in data:
         with open(str(d[2]) + ".txt", "w") as f:
-            f.write(str(lsn) + "," + d[3])
+            f.write(str(d[0]) + "," + d[3])
 
 
 # Commit a transaction by logging it and removing its ID from the taid list.
