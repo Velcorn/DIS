@@ -53,7 +53,7 @@ def log(taid, pid, data):
         lsn = 1
         lsns.append(1)
     else:
-        lsn = lsns[-1]
+        lsn = lsns[-1],
     lsns.append(lsn + 1)
 
     # Discern write operations and EOTs.
