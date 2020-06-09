@@ -41,5 +41,7 @@ def redo():
                 with open(w[2] + ".txt", "w") as g:
                         g.write(data[0])
 
+    return "Recovery finished."
+
 
 print(redo())

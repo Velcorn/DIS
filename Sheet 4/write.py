@@ -29,7 +29,7 @@ def write(taid, pid):
 
     # If more than 5 datasets in buffer, get those that have already been committed.
     data = []
-    if len(buffer) > 1000:
+    if len(buffer) > 5:
         for e in buffer:
             if e[1] not in taids:
                 data.append(e)
@@ -69,11 +69,11 @@ def log(taid, pid, data):
 def run():
     taid = begin_transaction()
     name = client.getName()
-    pids = range(int(name + "0"), int(name + "9"))
-    for _ in range(random.choice(range(5))):
+    pids = range(int(name + "0"), int(name + "9")+1)
+    for _ in range(random.randint(1, 5)):
         pid = random.choice(pids)
         write(taid, pid)
-        time.sleep(random.choice(range(3)))
+        time.sleep(random.randint(1, 3))
     commit(taid)
 
 
@@ -87,3 +87,5 @@ for i in range(5):
 
 for client in clients:
     client.join()
+
+print("Writing finished.")
