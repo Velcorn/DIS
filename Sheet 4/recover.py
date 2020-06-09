@@ -1,5 +1,10 @@
 import os
 
+# Check if log is present.
+if not os.path.exists("log.txt"):
+    print("There is no log.txt... First run write.py!")
+    exit()
+
 # Transform log into sorted list.
 log = []
 with open("log.txt", "r") as f:
