@@ -2,7 +2,6 @@ import time
 import threading
 import random
 
-
 # Initialize a buffer, a list of LSNs and a list of taids.
 buffer = []
 lsns = []
@@ -25,20 +24,21 @@ def write(taid, pid):
     strings = ["foo", "bar", "hello", "world", "random"]
     string = strings[random.choice(range(5))]
     log(taid, pid, string)
-    buffer.append([taid, pid, string])
+    lsn = lsns[-2]
+    buffer.append([lsn, taid, pid, string])
 
     # If more than 5 datasets in buffer, get those that have already been committed.
     data = []
     if len(buffer) > 5:
         for e in buffer:
-            if e[0] not in taids:
+            if e[1] not in taids:
                 data.append(e)
                 buffer.remove(e)
 
     # Write those datasets to their corresponding text files.
     for d in data:
-        with open(str(d[1]) + ".txt", "w") as f:
-            f.write(str(d[0]) + "," + d[2])
+        with open(str(d[2]) + ".txt", "w") as f:
+            f.write(str(lsn) + "," + d[3])
 
 
 # Commit a transaction by logging it and removing its ID from the taid list.
@@ -51,6 +51,7 @@ def commit(taid):
 def log(taid, pid, data):
     if not lsns:
         lsn = 1
+        lsns.append(1)
     else:
         lsn = lsns[-1]
     lsns.append(lsn + 1)
