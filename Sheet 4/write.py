@@ -29,7 +29,7 @@ def write(taid, pid):
 
     # If more than 5 datasets in buffer, get those that have already been committed.
     data = []
-    if len(buffer) > 5:
+    if len(buffer) > 1000:
         for e in buffer:
             if e[1] not in taids:
                 data.append(e)

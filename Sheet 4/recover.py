@@ -33,11 +33,13 @@ def redo():
             with open(w[2] + ".txt", "r") as g:
                 line = g.readline().strip()
                 lsn, string = line.split(",")
-                if lsn < w[0]:
-                    data = w[0] + "," + w[3]
+                data = []
+                if int(lsn) < int(w[0]):
+                    data.append(w[0] + "," + w[3])
 
-            with open(w[2] + ".txt", "w") as g:
-                    g.write(data)
+            if data:
+                with open(w[2] + ".txt", "w") as g:
+                        g.write(data[0])
 
 
 print(redo())
