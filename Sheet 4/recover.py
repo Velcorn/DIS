@@ -9,6 +9,7 @@ with open("log.txt", "r") as f:
 log = sorted(log, key=lambda x: int(x[0]))
 
 
+# Get all winner operations from the log.
 def analyze():
     taids = []
     for e in log:
@@ -23,6 +24,7 @@ def analyze():
     return winners
 
 
+# Redo winner operations either if the file doesn't exist or if the file LSN is smaller than the log LSN.
 def redo():
     winners = analyze()
     for w in winners:
