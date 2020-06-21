@@ -1,2 +1,2 @@
 # DIS
-Datenbanken und Informationssystem an der UHH (SoSe2020)
+Datenbanken und Informationssysteme an der UHH (SoSe2020)
