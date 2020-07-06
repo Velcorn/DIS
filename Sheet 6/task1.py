@@ -9,17 +9,20 @@ def etl():
         connection = connect(**params)
         cursor = connection.cursor()
 
+        # Clear DB before executing scripts.
         print("Clearing DB...")
         cursor.execute("drop schema public cascade; "
                        "create schema public;")
         print("Cleared DB.\n")
 
+        # Execute given and star schema script.
         print("Executing SQL scripts...")
         cursor.execute(open("stores-and-products.sql", encoding="utf-8").read())
         cursor.execute(open("star-schema.sql", encoding="utf-8").read())
         connection.commit()
         print("Executed SQL scripts.\n")
 
+        # Transfer existing data to the new tables.
         print("Transferring existing data...")
         print("Transferring shops...")
         cursor.execute("select s.shopid, s.name, ci.name, r.name, co.name "
@@ -53,17 +56,21 @@ def etl():
         print("Writing data from CSV file to DB...")
         print("Writing dates...")
         with open("sales.csv", "r", encoding="latin-1") as f:
+            # Open a CSV reader, skip headline, initialize dateid, list of dateids and list of dates.
             reader = csv.reader(f, delimiter=";")
             next(reader)
             did = 1
             dids = []
             dates = []
+            # Iterate over each line, split the date string into day, month, year,
+            # check if it's already in the list and append if not. Increase count.
             for row in reader:
-                if [row[0][:2], row[0][3:5], row[0][6:10]] not in dates:
+                if row[0].split(".") not in dates:
                     dids.append(did)
-                    dates.append([row[0][:2], row[0][3:5], row[0][6:10]])
+                    dates.append(row[0].split("."))
                     did += 1
 
+            # Zip dateids and dates together and write to the table.
             dateids = list(zip(dids, dates))
             for d in dateids:
                 cursor.execute("insert into dateid(id, day, month, year) "
@@ -79,10 +86,12 @@ def etl():
             next(reader)
             id = 1
             count = 0
+            # Give a progress counter for amount of lines already processed.
             for row in reader:
                 if count % 1000 == 0:
                     print(str(count) + "/" + str(amount))
 
+                # Get ids from tables, check if exists.
                 cursor.execute("select id from dateid "
                                "where day = %s "
                                "and month = %s "
@@ -106,6 +115,7 @@ def etl():
                 if aid:
                     aid = aid[0]
 
+                # Check if proper values are present.
                 try:
                     sold = int(row[3])
                 except ValueError:
@@ -116,6 +126,7 @@ def etl():
                 except ValueError:
                     rev = row[4]
 
+                # Check again before writing to DB.
                 if isinstance(did, int) and isinstance(sid, int) and isinstance(aid, int) \
                         and isinstance(sold, int) and isinstance(rev, float):
                     cursor.execute("insert into facttable(id, dateid, shopid, articleid, sold, revenue) "
