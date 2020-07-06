@@ -2,40 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ece90c6-a258-42eb-a180-dd5b44b150c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Sheet 6.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/star-schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/DIS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/DIS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/shelf/Uncommitted_changes_before_Update_at_03_07_20__15_10__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/shelf/Uncommitted_changes_before_Update_at_03_07_20__15_10__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DIS6.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DIS6/ex6/Article.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DIS6/ex6/Date.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DIS6/ex6/DbConnectionManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DIS6/ex6/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DIS6/ex6/Shop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DIS6/ex6/sales.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DIS6/ex6/stores-and-products.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex6/Article.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex6/Date.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex6/DbConnectionManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex6/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex6/Shop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex6/sales.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex6/stores-and-products.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1.py" beforeDir="false" afterPath="$PROJECT_DIR$/task1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,24 +71,44 @@
       <option name="presentableId" value="Default" />
       <updated>1594044812870</updated>
     </task>
+    <task id="LOCAL-00001" summary="Finished 6.1... missing a few entries :X">
+      <created>1594065796631</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594065796631</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finished 6.1... missing a few entries :X" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished 6.1... missing a few entries :X" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1259" height="148" key="GridCell.Tab.0.bottom" timestamp="1594065623282">
+    <state x="213" y="0" key="CommitChangelistDialog2" timestamp="1594065795890">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="148" key="GridCell.Tab.0.bottom/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594065623282" />
-    <state width="1259" height="148" key="GridCell.Tab.0.center" timestamp="1594065623282">
+    <state x="213" y="0" key="CommitChangelistDialog2/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594065795890" />
+    <state width="1259" height="148" key="GridCell.Tab.0.bottom" timestamp="1594065956247">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="148" key="GridCell.Tab.0.center/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594065623282" />
-    <state width="1259" height="148" key="GridCell.Tab.0.left" timestamp="1594065623282">
+    <state width="1259" height="148" key="GridCell.Tab.0.bottom/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594065956247" />
+    <state width="1259" height="148" key="GridCell.Tab.0.center" timestamp="1594065956246">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="148" key="GridCell.Tab.0.left/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594065623282" />
-    <state width="1259" height="148" key="GridCell.Tab.0.right" timestamp="1594065623282">
+    <state width="1259" height="148" key="GridCell.Tab.0.center/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594065956246" />
+    <state width="1259" height="148" key="GridCell.Tab.0.left" timestamp="1594065956246">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="148" key="GridCell.Tab.0.right/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594065623282" />
+    <state width="1259" height="148" key="GridCell.Tab.0.left/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594065956246" />
+    <state width="1259" height="148" key="GridCell.Tab.0.right" timestamp="1594065956247">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="148" key="GridCell.Tab.0.right/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594065956247" />
+    <state x="233" y="69" key="Vcs.Push.Dialog.v2" timestamp="1594065798157">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="69" key="Vcs.Push.Dialog.v2/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594065798157" />
   </component>
 </project>

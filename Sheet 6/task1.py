@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- coding: latin-1 -*-
 from psycopg2 import connect, Error
 from config import db_config
 import csv
@@ -19,23 +19,9 @@ def etl():
         cursor.execute(open("stores-and-products.sql").read())
         cursor.execute(open("star-schema.sql").read())
         connection.commit()
-        print("Executed SQL scripts...\n")
+        print("Executed SQL scripts.\n")
 
         print("Transferring existing data...")
-        print("Transferring articles...")
-        cursor.execute("select a.articleid, a.name, a.price, pg.name, pf.name, pc.name "
-                       "from article a "
-                       "join productgroup pg on a.productgroupid = pg.productgroupid "
-                       "join productfamily pf on pg.productfamilyid = pf.productfamilyid "
-                       "join productcategory pc on pf.productcategoryid = pc.productcategoryid")
-        articles = cursor.fetchall()
-        for a in articles:
-            cursor.execute("insert into articleid(id, name, price, productgroup, productfamily, productcategory) "
-                           "values(%s, %s, %s, %s, %s, %s) "
-                           "on conflict (id) do nothing",
-                           (a[0], a[1], a[2], a[3], a[4], a[5]))
-            connection.commit()
-
         print("Transferring shops...")
         cursor.execute("select s.shopid, s.name, ci.name, r.name, co.name "
                        "from shop s "
@@ -49,11 +35,25 @@ def etl():
                            "on conflict (id) do nothing",
                            (s[0], s[1], s[2], s[3], s[4]))
             connection.commit()
+
+        print("Transferring articles...")
+        cursor.execute("select a.articleid, a.name, a.price, pg.name, pf.name, pc.name "
+                       "from article a "
+                       "join productgroup pg on a.productgroupid = pg.productgroupid "
+                       "join productfamily pf on pg.productfamilyid = pf.productfamilyid "
+                       "join productcategory pc on pf.productcategoryid = pc.productcategoryid")
+        articles = cursor.fetchall()
+        for a in articles:
+            cursor.execute("insert into articleid(id, name, price, productgroup, productfamily, productcategory) "
+                           "values(%s, %s, %s, %s, %s, %s) "
+                           "on conflict (id) do nothing",
+                           (a[0], a[1], a[2], a[3], a[4], a[5]))
+            connection.commit()
         print("Transferred existing data.\n")
 
         print("Writing data from csv file to DB...")
-        print("\nWriting dates...")
-        with open("sales.csv", "r", encoding="Windows-1252") as f:
+        print("Writing dates...")
+        with open("sales.csv", "r", encoding="latin-1") as f:
             reader = csv.reader(f, delimiter=";")
             next(reader)
             did = 1
@@ -75,7 +75,7 @@ def etl():
 
         print("Writing data...")
         amount = len(open("sales.csv").readlines())
-        with open("sales.csv", "r", encoding="Windows-1252") as f:
+        with open("sales.csv", "r", encoding="latin-1") as f:
             reader = csv.reader(f, delimiter=";")
             next(reader)
             id = 1
@@ -129,7 +129,7 @@ def etl():
 
         cursor.close()
         connection.close()
-        return "Finished writing data from csv file."
+        return "\nFinished writing data from csv file."
     except (Exception, Error) as error:
         return error
     finally:
