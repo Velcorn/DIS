@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e9c23732-f007-4bb3-ac65-8883dbbb5abf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/task61.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sheet 6/task61.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1d2Ylz4m9n2O0LvxGsuhDR1koyF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Sheet 4" />
+      <recent name="$PROJECT_DIR$/Sheet 4/Project" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.task61">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DIS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sheet 4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sheet 4/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="recover" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DIS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sheet 4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sheet 4/recover.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="task61" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DIS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sheet 6" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sheet 6/task61.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="write" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DIS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sheet 4" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sheet 4/write.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.task61" />
+        <item itemvalue="Python.write" />
+        <item itemvalue="Python.recover" />
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9c23732-f007-4bb3-ac65-8883dbbb5abf" name="Default Changelist" comment="" />
+      <created>1591624809242</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591624809242</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Improvements, presumably &quot;only&quot; missing recovery.">
+      <created>1591644333660</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591644333660</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Minor text fixes">
+      <created>1591644479000</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591644479000</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Maybe recovery finished :P">
+      <created>1591704004494</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591704004494</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Minor text fixes">
+      <created>1591705835088</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591705835088</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Minor text fixes">
+      <created>1591707063486</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591707063486</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Minor text fixes">
+      <created>1591707742346</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591707742346</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Minor text fixes">
+      <created>1591709181929</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1591709181929</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Minor text fixes">
+      <created>1591709611841</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591709611841</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fixed LSN">
+      <created>1591732272497</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591732272497</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Initial commit sheet6">
+      <created>1593781739230</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1593781739230</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Initial commit sheet6">
+      <created>1593781829227</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1593781829227</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Improvements, presumably &quot;only&quot; missing recovery." />
+    <MESSAGE value="Maybe recovery finished :P" />
+    <MESSAGE value="Minor text fixes" />
+    <MESSAGE value="Fixed LSN" />
+    <MESSAGE value="Initial commit sheet6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit sheet6" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="620" y="2" width="812" height="1014" key="#task61" timestamp="1593784488909">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state x="620" y="2" width="812" height="1014" key="#task61/0.0.1920.1016@0.0.1920.1016" timestamp="1593784488909" />
+    <state x="814" y="0" width="1096" height="1012" key="CommitChangelistDialog2" timestamp="1593781829004">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state x="814" y="0" width="1096" height="1012" key="CommitChangelistDialog2/0.0.1920.1016@0.0.1920.1016" timestamp="1593781829004" />
+    <state x="832" y="3" width="377" height="1009" key="EnvironmentVariablesDialog" timestamp="1593784479697">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state x="832" y="3" width="377" height="1009" key="EnvironmentVariablesDialog/0.0.1920.1016@0.0.1920.1016" timestamp="1593784479697" />
+    <state x="1170" y="209" width="530" height="596" key="FileChooserDialogImpl" timestamp="1593784500644">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state x="1170" y="209" width="530" height="596" key="FileChooserDialogImpl/0.0.1920.1016@0.0.1920.1016" timestamp="1593784500644" />
+    <state width="932" height="250" key="GridCell.Tab.0.bottom" timestamp="1593786447303">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="932" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1016@0.0.1920.1016" timestamp="1593786447303" />
+    <state width="932" height="250" key="GridCell.Tab.0.center" timestamp="1593786447302">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="932" height="250" key="GridCell.Tab.0.center/0.0.1920.1016@0.0.1920.1016" timestamp="1593786447302" />
+    <state width="932" height="250" key="GridCell.Tab.0.left" timestamp="1593786447302">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="932" height="250" key="GridCell.Tab.0.left/0.0.1920.1016@0.0.1920.1016" timestamp="1593786447302" />
+    <state width="932" height="250" key="GridCell.Tab.0.right" timestamp="1593786447303">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state width="932" height="250" key="GridCell.Tab.0.right/0.0.1920.1016@0.0.1920.1016" timestamp="1593786447303" />
+    <state x="980" y="215" width="910" height="583" key="MultipleFileMergeDialog" timestamp="1593781842472">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state x="980" y="215" width="910" height="583" key="MultipleFileMergeDialog/0.0.1920.1016@0.0.1920.1016" timestamp="1593781842472" />
+    <state x="315" y="0" width="1280" height="1014" key="SettingsEditor" timestamp="1593784413020">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state x="315" y="0" width="1280" height="1014" key="SettingsEditor/0.0.1920.1016@0.0.1920.1016" timestamp="1593784413020" />
+    <state x="910" y="181" width="1000" height="652" key="Vcs.Push.Dialog.v2" timestamp="1593781848393">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state x="910" y="181" width="1000" height="652" key="Vcs.Push.Dialog.v2/0.0.1920.1016@0.0.1920.1016" timestamp="1593781848393" />
+    <state x="1060" y="100" width="760" height="816" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1591709574734">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state x="1060" y="100" width="760" height="816" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1016@0.0.1920.1016" timestamp="1591709574734" />
+    <state x="1167" y="405" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593781906388">
+      <screen x="0" y="0" width="1920" height="1016" />
+    </state>
+    <state x="1167" y="405" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1016@0.0.1920.1016" timestamp="1593781906388" />
+  </component>
+</project>
