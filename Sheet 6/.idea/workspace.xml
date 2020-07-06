@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2ece90c6-a258-42eb-a180-dd5b44b150c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Sheet 6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/star-schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/DIS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/DIS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/shelf/Uncommitted_changes_before_Update_at_03_07_20__15_10__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/shelf/Uncommitted_changes_before_Update_at_03_07_20__15_10__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DIS6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DIS6/ex6/Article.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DIS6/ex6/Date.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DIS6/ex6/DbConnectionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DIS6/ex6/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DIS6/ex6/Shop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DIS6/ex6/sales.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DIS6/ex6/stores-and-products.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex6/Article.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex6/Date.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex6/DbConnectionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex6/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex6/Shop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex6/sales.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ex6/stores-and-products.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1eJfrEzrj2Btf2BCRwHpHKoi780" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Documents\Programming\DIS\Sheet 6" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="task1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Sheet 6" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/task1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.task1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ece90c6-a258-42eb-a180-dd5b44b150c5" name="Default Changelist" comment="" />
+      <created>1594044812870</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594044812870</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1259" height="148" key="GridCell.Tab.0.bottom" timestamp="1594065623282">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="148" key="GridCell.Tab.0.bottom/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594065623282" />
+    <state width="1259" height="148" key="GridCell.Tab.0.center" timestamp="1594065623282">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="148" key="GridCell.Tab.0.center/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594065623282" />
+    <state width="1259" height="148" key="GridCell.Tab.0.left" timestamp="1594065623282">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="148" key="GridCell.Tab.0.left/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594065623282" />
+    <state width="1259" height="148" key="GridCell.Tab.0.right" timestamp="1594065623282">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="148" key="GridCell.Tab.0.right/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594065623282" />
+  </component>
+</project>

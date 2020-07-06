@@ -20,8 +20,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9c23732-f007-4bb3-ac65-8883dbbb5abf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sheet 6/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sheet 6/star-schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sheet 6/task1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DIS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DIS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_07_20__15_10__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_07_20__15_10__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sheet 6/task61.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sheet 6/task61.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/DIS6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/out/production/DIS6/ex6/Article.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/out/production/DIS6/ex6/Date.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/out/production/DIS6/ex6/DbConnectionManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/out/production/DIS6/ex6/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/out/production/DIS6/ex6/Shop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/out/production/DIS6/ex6/sales.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/out/production/DIS6/ex6/stores-and-products.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/src/ex6/Article.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/src/ex6/Date.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/src/ex6/DbConnectionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/src/ex6/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/src/ex6/Shop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/src/ex6/sales.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 6/src/ex6/stores-and-products.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,13 +79,17 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sheet 6" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Documents\Programming\DIS\Sheet 6" />
+      <recent name="E:\Documents\Programming\DIS" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Sheet 4" />
@@ -281,9 +314,10 @@
       <screen x="0" y="0" width="1920" height="1016" />
     </state>
     <state x="832" y="3" width="377" height="1009" key="EnvironmentVariablesDialog/0.0.1920.1016@0.0.1920.1016" timestamp="1593784479697" />
-    <state x="1170" y="209" width="530" height="596" key="FileChooserDialogImpl" timestamp="1593784500644">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state x="780" y="140" width="530" height="596" key="FileChooserDialogImpl" timestamp="1594044811745">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="780" y="140" key="FileChooserDialogImpl/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594044811745" />
     <state x="1170" y="209" width="530" height="596" key="FileChooserDialogImpl/0.0.1920.1016@0.0.1920.1016" timestamp="1593784500644" />
     <state width="932" height="250" key="GridCell.Tab.0.bottom" timestamp="1593786447303">
       <screen x="0" y="0" width="1920" height="1016" />
