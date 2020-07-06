@@ -1,4 +1,3 @@
-# -*- coding: latin-1 -*-
 from psycopg2 import connect, Error
 from config import db_config
 import csv
@@ -16,8 +15,8 @@ def etl():
         print("Cleared DB.\n")
 
         print("Executing SQL scripts...")
-        cursor.execute(open("stores-and-products.sql").read())
-        cursor.execute(open("star-schema.sql").read())
+        cursor.execute(open("stores-and-products.sql", encoding="utf-8").read())
+        cursor.execute(open("star-schema.sql", encoding="utf-8").read())
         connection.commit()
         print("Executed SQL scripts.\n")
 
@@ -51,7 +50,7 @@ def etl():
             connection.commit()
         print("Transferred existing data.\n")
 
-        print("Writing data from csv file to DB...")
+        print("Writing data from CSV file to DB...")
         print("Writing dates...")
         with open("sales.csv", "r", encoding="latin-1") as f:
             reader = csv.reader(f, delimiter=";")
@@ -129,7 +128,7 @@ def etl():
 
         cursor.close()
         connection.close()
-        return "\nFinished writing data from csv file."
+        return "\nFinished writing data from CSV file."
     except (Exception, Error) as error:
         return error
     finally:
