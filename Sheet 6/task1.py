@@ -148,4 +148,4 @@ def etl():
             connection.close()
 
 
-print(etl())
+etl()
