@@ -5,11 +5,11 @@ from config import db_config
 def data_analysis():
     while True:
         print("Please enter a comma seperated string like: geo,time,product")
-        print("Possible values: Geo(shop, city, region, country); "
+        print("Possible inputs: Geo(shop, city, region, country); "
               "Time(day, month, year); "
-              "Product(name, group, family, category)")
+              "Product(product, productgroup, productfamily, productcategory)")
 
-        # Get user input from console and catch possible errors.
+        # Get user input from console, catching possible errors.
         try:
             geo, time, product = input("> ").replace(" ", "").split(",")
         except ValueError:
@@ -23,15 +23,11 @@ def data_analysis():
         if time not in ["day", "month", "year"]:
             print("Invalid time!\n")
             continue
-        if product not in ["name", "group", "family", "category"]:
+        if product == "product":
+            product = "name"
+        if product not in ["product", "productgroup", "productfamily", "productcategory"]:
             print("Invalid product!\n")
             continue
-        if product == "group":
-            product = "productgroup"
-        if product == "family":
-            product = "productfamily"
-        if product == "category":
-            product = "productcategory"
         print("\n")
 
         try:
