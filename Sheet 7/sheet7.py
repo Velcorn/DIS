@@ -37,29 +37,27 @@ itemsets_1 = list(itemsets_1.keys())
 
 while number != 0:
     # Get candidates from itemsets_1.
-    candidates = []
+    candidates = set()
     itemsets = itemsets_1
     for c in list(combinations(itemsets_1, size)):
         if all(s[0] in c for s in combinations(c, size-1)):
-            candidates.append(c)
+            candidates.add(c)
 
-    with open("transactions.txt", "r") as f:
-        itemsets_k = {}
-        lines = f.readlines()
-        for line in lines:
-            for c in candidates:
-                if all(e in line.strip().split(" ") for e in c):
-                    if tuple(c) not in itemsets_k:
-                        itemsets_k[tuple(c)] = 1
-                    else:
-                        itemsets_k[tuple(c)] += 1
+    itemsets_k = {}
+    for line in lines:
+        for c in candidates:
+            if all(e in line.strip().split(" ") for e in c):
+                if tuple(c) not in itemsets_k:
+                    itemsets_k[tuple(c)] = 1
+                else:
+                    itemsets_k[tuple(c)] += 1
 
-        keys = [k for k, v in itemsets_k.items() if v < threshhold]
-        for k in keys:
-            del itemsets_k[k]
+    keys = [k for k, v in itemsets_k.items() if v < threshhold]
+    for k in keys:
+        del itemsets_k[k]
 
-        for i in itemsets_k.keys():
-            itemsets_k[i] = round(itemsets_k[i] / threshhold, 2)
+    for i in itemsets_k.keys():
+        itemsets_k[i] = round(itemsets_k[i] / threshhold, 2)
 
     if len(itemsets_k) == 1:
         print("There is", len(itemsets_k), "itemset with", size, "items:")
