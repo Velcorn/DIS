@@ -20,17 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9c23732-f007-4bb3-ac65-8883dbbb5abf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sheet 7/sheet7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_07_20__15_10__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_07_20__15_10__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sheet 6/.idea/Sheet 6.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sheet 6/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sheet 6/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sheet 6/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sheet 6/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sheet 6/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sheet 6/.idea/pylint.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sheet 6/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sheet 6/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sheet 7/sheet7.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sheet 7/sheet7.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +37,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1d2Ylz4m9n2O0LvxGsuhDR1koyF" />
@@ -185,8 +182,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.sheet7" />
-        <item itemvalue="Python.task61" />
         <item itemvalue="Python.write" />
+        <item itemvalue="Python.task61" />
         <item itemvalue="Python.recover" />
         <item itemvalue="Python.main" />
       </list>
@@ -321,22 +318,42 @@
     </state>
     <state x="780" y="140" key="FileChooserDialogImpl/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594044811745" />
     <state x="1170" y="209" width="530" height="596" key="FileChooserDialogImpl/0.0.1920.1016@0.0.1920.1016" timestamp="1594379712286" />
-    <state width="1892" height="250" key="GridCell.Tab.0.bottom" timestamp="1594379713725">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state width="1259" height="179" key="GridCell.Tab.0.bottom" timestamp="1594420342857">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1259" height="179" key="GridCell.Tab.0.bottom/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594420342857" />
     <state width="1892" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1016@0.0.1920.1016" timestamp="1594379713725" />
-    <state width="1892" height="250" key="GridCell.Tab.0.center" timestamp="1594379713724">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state width="1259" height="179" key="GridCell.Tab.0.center" timestamp="1594420342857">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1259" height="179" key="GridCell.Tab.0.center/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594420342857" />
     <state width="1892" height="250" key="GridCell.Tab.0.center/0.0.1920.1016@0.0.1920.1016" timestamp="1594379713724" />
-    <state width="1892" height="250" key="GridCell.Tab.0.left" timestamp="1594379713723">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state width="1259" height="179" key="GridCell.Tab.0.left" timestamp="1594420342857">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1259" height="179" key="GridCell.Tab.0.left/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594420342857" />
     <state width="1892" height="250" key="GridCell.Tab.0.left/0.0.1920.1016@0.0.1920.1016" timestamp="1594379713723" />
-    <state width="1892" height="250" key="GridCell.Tab.0.right" timestamp="1594379713724">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state width="1259" height="179" key="GridCell.Tab.0.right" timestamp="1594420342857">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1259" height="179" key="GridCell.Tab.0.right/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594420342857" />
     <state width="1892" height="250" key="GridCell.Tab.0.right/0.0.1920.1016@0.0.1920.1016" timestamp="1594379713724" />
+    <state width="1259" height="185" key="GridCell.Tab.1.bottom" timestamp="1594419677989">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="185" key="GridCell.Tab.1.bottom/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594419677989" />
+    <state width="1259" height="185" key="GridCell.Tab.1.center" timestamp="1594419677989">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="185" key="GridCell.Tab.1.center/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594419677989" />
+    <state width="1259" height="185" key="GridCell.Tab.1.left" timestamp="1594419677989">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="185" key="GridCell.Tab.1.left/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594419677989" />
+    <state width="1259" height="185" key="GridCell.Tab.1.right" timestamp="1594419677989">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="185" key="GridCell.Tab.1.right/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594419677989" />
     <state x="980" y="215" width="910" height="583" key="MultipleFileMergeDialog" timestamp="1593781842472">
       <screen x="0" y="0" width="1920" height="1016" />
     </state>
