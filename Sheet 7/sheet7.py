@@ -1,3 +1,5 @@
+from itertools import combinations
+
 # Iterate over transactions and get count of each itemset.
 with open("transactions.txt", "r") as f:
     itemsets_1 = {}
@@ -20,21 +22,25 @@ with open("transactions.txt", "r") as f:
     for i in itemsets_1:
         itemsets_1[i] /= length / 100
 
-print("Found", len(itemsets_1), "itemsets with 1 item:")
-print(sorted(itemsets_1.items(), key=lambda x: int(x[0])))
+print("There are", len(itemsets_1), "itemsets with 1 item:")
+print(sorted(itemsets_1.items(), key=lambda x: x[1], reverse=True))
 print("\n")
 
+# Size of itemsets.
 size = 2
-length = 1
-itemsets_1 = sorted(itemsets_1.keys(), key=lambda x: int(x))
-while length != 0:
+
+# Number of itemsets as exit condition.
+number = len(itemsets_1)
+
+# Only itemsets without number/support for iteration.
+itemsets_1 = list(itemsets_1.keys())
+
+while number != 0:
+    # Get candidates from itemsets_1.
     candidates = []
-    for index, item in enumerate(itemsets_1):
-        c = []
-        if index < len(itemsets_1)-size:
-            for i in range(size):
-                c.append(itemsets_1[index + i])
-        if c:
+    itemsets = itemsets_1
+    for c in list(combinations(itemsets_1, size)):
+        if all(s[0] in c for s in combinations(c, size-1)):
             candidates.append(c)
 
     with open("transactions.txt", "r") as f:
@@ -48,19 +54,21 @@ while length != 0:
                     else:
                         itemsets_k[tuple(c)] += 1
 
-        # Delete items with count below threshhold.
-        '''threshhold = 1 / 100 * length
-        keys = [k for k, v in itemsets.items() if v < threshhold]
+        keys = [k for k, v in itemsets_k.items() if v < threshhold]
         for k in keys:
-            del itemsets[k]'''
+            del itemsets_k[k]
 
-        '''# Get support as value.
-        for i in itemsets:
-            itemsets[i] /= length / 100'''
+        for i in itemsets_k.keys():
+            itemsets_k[i] = round(itemsets_k[i] / threshhold, 2)
 
-    print("Found", len(itemsets_k), "itemsets with", size, "items:")
-    print(sorted(itemsets_k.items(), key=lambda x: int(x[0][0])))
+    if len(itemsets_k) == 1:
+        print("There is", len(itemsets_k), "itemset with", size, "items:")
+    else:
+        print("There are", len(itemsets_k), "itemsets with", size, "items:")
+    print(sorted(itemsets_k.items(), key=lambda x: x[1], reverse=True))
     print("\n")
 
-    length = len(itemsets_k)
+    # Change variables after iteration.
+    number = len(itemsets_k)
+    itemsets = list(itemsets_k.keys())
     size += 1
