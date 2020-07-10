@@ -22,7 +22,7 @@ with open("transactions.txt", "r") as f:
     for i in itemsets_1:
         itemsets_1[i] /= length / 100
 
-print("There are", len(itemsets_1), "itemsets with 1 item:")
+print("There are {} itemsets with 1 item:".format(len(itemsets_1)))
 print(sorted(itemsets_1.items(), key=lambda x: x[1], reverse=True))
 print("\n")
 
@@ -60,9 +60,9 @@ while number != 0:
         itemsets_k[i] = round(itemsets_k[i] / threshhold, 2)
 
     if len(itemsets_k) == 1:
-        print("There is", len(itemsets_k), "itemset with", size, "items:")
+        print("There is {} itemset with {} items:".format(len(itemsets_k), size))
     else:
-        print("There are", len(itemsets_k), "itemsets with", size, "items:")
+        print("There are {} itemset with {} items:".format(len(itemsets_k), size))
     print(sorted(itemsets_k.items(), key=lambda x: x[1], reverse=True))
     print("\n")
 
