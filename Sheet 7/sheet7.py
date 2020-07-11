@@ -74,4 +74,4 @@ while NUMBER != 0:
     items = set(item for items in list(itemsets_k.keys()) for item in items)
 
 end = time()
-print(end-start)
+print(f"Program finished in {round(end-start, 2)} seconds.")
