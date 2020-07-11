@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9c23732-f007-4bb3-ac65-8883dbbb5abf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sheet 7/sheet7.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sheet 7/sheet7.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -319,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594505350347</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Minor text fixes">
+      <created>1594505444266</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1594505444266</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -349,10 +357,10 @@
       <screen x="0" y="0" width="1920" height="1016" />
     </state>
     <state x="620" y="2" width="812" height="1014" key="#task61/0.0.1920.1016@0.0.1920.1016" timestamp="1593784488909" />
-    <state x="-1736" y="0" width="1096" height="680" key="CommitChangelistDialog2" timestamp="1594505349864">
+    <state x="-1736" y="0" width="1096" height="680" key="CommitChangelistDialog2" timestamp="1594505443881">
       <screen x="-1920" y="0" width="1280" height="680" />
     </state>
-    <state x="-1736" y="0" width="1096" height="680" key="CommitChangelistDialog2/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@-1920.0.1280.680" timestamp="1594505349864" />
+    <state x="-1736" y="0" width="1096" height="680" key="CommitChangelistDialog2/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@-1920.0.1280.680" timestamp="1594505443881" />
     <state x="543" y="0" key="CommitChangelistDialog2/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594498134697" />
     <state x="814" y="0" width="1096" height="1012" key="CommitChangelistDialog2/0.0.1920.1016@0.0.1920.1016" timestamp="1593781829004" />
     <state x="832" y="3" width="377" height="1009" key="EnvironmentVariablesDialog" timestamp="1593784479697">
@@ -424,10 +432,10 @@
       <screen x="0" y="0" width="1920" height="1016" />
     </state>
     <state x="315" y="0" width="1280" height="1014" key="SettingsEditor/0.0.1920.1016@0.0.1920.1016" timestamp="1593784413020" />
-    <state x="-1640" y="28" width="1000" height="652" key="Vcs.Push.Dialog.v2" timestamp="1594505352101">
+    <state x="-1640" y="28" width="1000" height="652" key="Vcs.Push.Dialog.v2" timestamp="1594505445332">
       <screen x="-1920" y="0" width="1280" height="680" />
     </state>
-    <state x="-1640" y="28" key="Vcs.Push.Dialog.v2/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@-1920.0.1280.680" timestamp="1594505352101" />
+    <state x="-1640" y="28" key="Vcs.Push.Dialog.v2/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@-1920.0.1280.680" timestamp="1594505445332" />
     <state x="466" y="121" key="Vcs.Push.Dialog.v2/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594498136202" />
     <state x="910" y="181" width="1000" height="652" key="Vcs.Push.Dialog.v2/0.0.1920.1016@0.0.1920.1016" timestamp="1593781848393" />
     <state x="1060" y="100" width="760" height="816" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1591709574734">
