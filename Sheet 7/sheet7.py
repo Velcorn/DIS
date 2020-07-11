@@ -2,8 +2,19 @@ from itertools import combinations
 
 # Iterate over transactions and get count of each itemset.
 with open("transactions.txt", "r") as f:
-    transactions = [line.strip().split(" ") for line in f.readlines()]
+    transactions = [set(line.strip().split(" ")) for line in f.readlines()]
 
+
+# Get individual items from list of lists.
+def get_items(listlist):
+    items = set()
+    for sl in listlist:
+        for e in sl:
+            items.add(e)
+    return items
+
+
+# Get counts for itemsets.
 itemsets_1 = {}
 for t in transactions:
     for i in t:
@@ -20,31 +31,30 @@ for i in itemsets_1:
 
 # Delete items below min support.
 keys = [k for k, v in itemsets_1.items() if v < 1]
-for SIZE in keys:
-    del itemsets_1[SIZE]
+for k in keys:
+    del itemsets_1[k]
 
 # Print itemsets sorted by support.
 print(f"There are {len(itemsets_1)} itemsets with 1 item:")
 print(sorted(itemsets_1.items(), key=lambda x: x[1], reverse=True))
+print("\n")
 
 # Size of itemsets.
 SIZE = 2
 # Number of itemsets as exit condition.
 NUMBER = len(itemsets_1)
-# Only itemsets without support for iteration.
-itemsets_1 = set(itemsets_1.keys())
-itemsets = itemsets_1
+# Only items for creating tuples.
+items = list(itemsets_1.keys())
 while NUMBER != 0:
-    # Get candidates from itemsets_1.
-    candidates = set()
-    for c in set(combinations(itemsets_1, SIZE)):
-        if all(s[0] in itemsets for s in set(combinations(c, SIZE - 1))):
-            candidates.add(c)
+    # Get candidates from itemsets.
+    candidates = []
+    for c in combinations(items, SIZE):
+        candidates.append(c)
 
     itemsets_k = {}
     for t in transactions:
         for c in candidates:
-            if all(e in t for e in c):
+            if t.issuperset(c):
                 if c in itemsets_k:
                     itemsets_k[c] += 1
                 else:
@@ -61,10 +71,11 @@ while NUMBER != 0:
     if len(itemsets_k) == 1:
         print(f"There is {len(itemsets_k)} itemset with {SIZE} items:")
     else:
-        print(f"There are {len(itemsets_k)} itemset with {SIZE} items:")
+        print(f"There are {len(itemsets_k)} itemsets with {SIZE} items:")
     print(sorted(itemsets_k.items(), key=lambda x: x[1], reverse=True))
+    print("\n")
 
     # Change variables after iteration.
-    itemsets = set(itemsets_k.keys())
     NUMBER = len(itemsets_k)
     SIZE += 1
+    items = get_items(list(itemsets_k.keys()))
