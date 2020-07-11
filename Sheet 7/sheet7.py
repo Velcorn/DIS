@@ -23,33 +23,32 @@ for size in keys:
 for i in itemsets_1:
     itemsets_1[i] /= length / 100
 
-print("There are {} itemsets with 1 item:".format(len(itemsets_1)))
+# Print itemsets sorted by support value.
+print(f"There are {len(itemsets_1)} itemsets with 1 item:")
 print(sorted(itemsets_1.items(), key=lambda x: x[1], reverse=True))
-print("\n")
 
 # Size of itemsets.
 size = 2
 # Number of itemsets as exit condition.
 number = len(itemsets_1)
-# Only itemsets without number/support for iteration.
+# Only itemsets without support for iteration.
 itemsets_1 = set(itemsets_1.keys())
 itemsets = itemsets_1
 while number != 0:
     # Get candidates from itemsets_1.
     candidates = set()
-    for c in combinations(itemsets_1, size):
-        if all(s[0] in itemsets for s in combinations(c, size-1)):
+    for c in set(combinations(itemsets_1, size)):
+        if all(s[0] in itemsets for s in set(combinations(c, size-1))):
             candidates.add(c)
 
     itemsets_k = {}
     for t in transactions:
-        subsets = combinations(t, size)
-        for s in subsets:
-            if s in candidates:
-                if s in itemsets_k:
-                    itemsets_k[s] += 1
+        for c in candidates:
+            if all(e in t for e in c):
+                if c in itemsets_k:
+                    itemsets_k[c] += 1
                 else:
-                    itemsets_k[s] = 1
+                    itemsets_k[c] = 1
 
     keys = [k for k, v in itemsets_k.items() if v < threshhold]
     for k in keys:
@@ -59,13 +58,12 @@ while number != 0:
         itemsets_k[i] = round(itemsets_k[i] / threshhold, 2)
 
     if len(itemsets_k) == 1:
-        print("There is {} itemset with {} items:".format(len(itemsets_k), size))
+        print(f"There is {len(itemsets_k)} itemset with {size} items:")
     else:
-        print("There are {} itemset with {} items:".format(len(itemsets_k), size))
+        print(f"There are {len(itemsets_k)} itemset with {size} items:")
     print(sorted(itemsets_k.items(), key=lambda x: x[1], reverse=True))
-    print("\n")
 
     # Change variables after iteration.
     number = len(itemsets_k)
-    itemsets = list(itemsets_k.keys())
+    itemsets = set(itemsets_k.keys())
     size += 1
