@@ -21,7 +21,7 @@ for size in keys:
 
 # Get support as value.
 for i in itemsets_1:
-    itemsets_1[i] /= length / 100
+    itemsets_1[i] /= threshhold
 
 # Print itemsets sorted by support value.
 print(f"There are {len(itemsets_1)} itemsets with 1 item:")
@@ -54,8 +54,9 @@ while number != 0:
     for k in keys:
         del itemsets_k[k]
 
-    for i in itemsets_k.keys():
-        itemsets_k[i] = round(itemsets_k[i] / threshhold, 2)
+    for i in itemsets_k:
+        itemsets_k[i] /= threshhold
+        round(itemsets_k[i], 2)
 
     if len(itemsets_k) == 1:
         print(f"There is {len(itemsets_k)} itemset with {size} items:")
