@@ -2,25 +2,26 @@ from itertools import combinations
 
 # Iterate over transactions and get count of each itemset.
 with open("transactions.txt", "r") as f:
-    itemsets_1 = {}
-    lines = f.readlines()
-    for line in lines:
-        for i in line.strip().split(" "):
-            if i not in itemsets_1:
-                itemsets_1[i] = 1
-            else:
-                itemsets_1[i] += 1
+    transactions = [line.strip().split(" ") for line in f.readlines()]
 
-    # Delete items with count below threshhold.
-    length = len(lines)
-    threshhold = 1 / 100 * length
-    keys = [k for k, v in itemsets_1.items() if v < threshhold]
-    for size in keys:
-        del itemsets_1[size]
+itemsets_1 = {}
+for t in transactions:
+    for i in t:
+        if i in itemsets_1:
+            itemsets_1[i] += 1
+        else:
+            itemsets_1[i] = 1
 
-    # Get support as value.
-    for i in itemsets_1:
-        itemsets_1[i] /= length / 100
+# Delete items with count below threshhold.
+length = len(transactions)
+threshhold = 1 / 100 * length
+keys = [k for k, v in itemsets_1.items() if v < threshhold]
+for size in keys:
+    del itemsets_1[size]
+
+# Get support as value.
+for i in itemsets_1:
+    itemsets_1[i] /= length / 100
 
 print("There are {} itemsets with 1 item:".format(len(itemsets_1)))
 print(sorted(itemsets_1.items(), key=lambda x: x[1], reverse=True))
@@ -28,29 +29,27 @@ print("\n")
 
 # Size of itemsets.
 size = 2
-
 # Number of itemsets as exit condition.
 number = len(itemsets_1)
-
 # Only itemsets without number/support for iteration.
-itemsets_1 = list(itemsets_1.keys())
-
+itemsets_1 = set(itemsets_1.keys())
+itemsets = itemsets_1
 while number != 0:
     # Get candidates from itemsets_1.
     candidates = set()
-    itemsets = itemsets_1
-    for c in list(combinations(itemsets_1, size)):
-        if all(s[0] in c for s in combinations(c, size-1)):
+    for c in combinations(itemsets_1, size):
+        if all(s[0] in itemsets for s in combinations(c, size-1)):
             candidates.add(c)
 
     itemsets_k = {}
-    for line in lines:
-        for c in candidates:
-            if all(e in line.strip().split(" ") for e in c):
-                if tuple(c) not in itemsets_k:
-                    itemsets_k[tuple(c)] = 1
+    for t in transactions:
+        subsets = combinations(t, size)
+        for s in subsets:
+            if s in candidates:
+                if s in itemsets_k:
+                    itemsets_k[s] += 1
                 else:
-                    itemsets_k[tuple(c)] += 1
+                    itemsets_k[s] = 1
 
     keys = [k for k, v in itemsets_k.items() if v < threshhold]
     for k in keys:
