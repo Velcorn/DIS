@@ -1,4 +1,7 @@
+from time import time
 from itertools import combinations
+
+start = time()
 
 # Transform transactions to list of sets.
 with open("transactions.txt", "r") as f:
@@ -37,9 +40,7 @@ NUMBER = len(itemsets_1)
 items = list(itemsets_1.keys())
 while NUMBER != 0:
     # Get candidates from items.
-    candidates = []
-    for c in combinations(items, SIZE):
-        candidates.append(c)
+    candidates = [c for c in combinations(items, SIZE)]
 
     # Get count of itemsets of size k.
     itemsets_k = {}
@@ -71,3 +72,6 @@ while NUMBER != 0:
     SIZE += 1
     # Get unique items from nested list.
     items = set(item for items in list(itemsets_k.keys()) for item in items)
+
+end = time()
+print(end-start)
