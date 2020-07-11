@@ -1,20 +1,10 @@
 from itertools import combinations
 
-# Iterate over transactions and get count of each itemset.
+# Transform transactions to list of sets.
 with open("transactions.txt", "r") as f:
     transactions = [set(line.strip().split(" ")) for line in f.readlines()]
 
-
-# Get individual items from list of lists.
-def get_items(listlist):
-    items = set()
-    for sl in listlist:
-        for e in sl:
-            items.add(e)
-    return items
-
-
-# Get counts for itemsets.
+# Get counts for itemsets of size 1.
 itemsets_1 = {}
 for t in transactions:
     for i in t:
@@ -29,7 +19,7 @@ threshhold = 1 / 100 * length
 for i in itemsets_1:
     itemsets_1[i] /= threshhold
 
-# Delete items below min support.
+# Remove items below min support.
 keys = [k for k, v in itemsets_1.items() if v < 1]
 for k in keys:
     del itemsets_1[k]
@@ -46,11 +36,12 @@ NUMBER = len(itemsets_1)
 # Only items for creating tuples.
 items = list(itemsets_1.keys())
 while NUMBER != 0:
-    # Get candidates from itemsets.
+    # Get candidates from items.
     candidates = []
     for c in combinations(items, SIZE):
         candidates.append(c)
 
+    # Get count of itemsets of size k.
     itemsets_k = {}
     for t in transactions:
         for c in candidates:
@@ -78,4 +69,5 @@ while NUMBER != 0:
     # Change variables after iteration.
     NUMBER = len(itemsets_k)
     SIZE += 1
-    items = get_items(list(itemsets_k.keys()))
+    # Get unique items from nested list.
+    items = set(item for items in list(itemsets_k.keys()) for item in items)
