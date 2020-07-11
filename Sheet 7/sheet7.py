@@ -65,6 +65,6 @@ while NUMBER != 0:
     print(sorted(itemsets_k.items(), key=lambda x: x[1], reverse=True))
 
     # Change variables after iteration.
-    NUMBER = len(itemsets_k)
     itemsets = set(itemsets_k.keys())
+    NUMBER = len(itemsets_k)
     SIZE += 1
