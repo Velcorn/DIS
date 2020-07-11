@@ -62,18 +62,18 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Documents\Programming\DIS\Sheet 6" />
-      <recent name="E:\Documents\Programming\DIS" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Sheet 4" />
       <recent name="$PROJECT_DIR$/Sheet 4/Project" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Documents\Programming\DIS\Sheet 6" />
+      <recent name="E:\Documents\Programming\DIS" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.sheet7">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Apriori" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DIS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -81,32 +81,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sheet 4" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sheet 7" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sheet 4/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="recover" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DIS" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sheet 4" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sheet 4/recover.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sheet 7/Apriori.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,6 +107,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sheet 7/sheet7.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sheet71" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DIS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sheet 7" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sheet 7/sheet71.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -180,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sheet7" />
         <item itemvalue="Python.write" />
         <item itemvalue="Python.task61" />
-        <item itemvalue="Python.recover" />
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.sheet71" />
+        <item itemvalue="Python.sheet7" />
+        <item itemvalue="Python.Apriori" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594465016682</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Minor text fixes">
+      <created>1594465661751</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1594465661751</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -311,10 +318,10 @@
       <screen x="0" y="0" width="1920" height="1016" />
     </state>
     <state x="620" y="2" width="812" height="1014" key="#task61/0.0.1920.1016@0.0.1920.1016" timestamp="1593784488909" />
-    <state x="543" y="0" width="1096" height="1012" key="CommitChangelistDialog2" timestamp="1594465016234">
+    <state x="543" y="0" width="1096" height="1012" key="CommitChangelistDialog2" timestamp="1594465661384">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="543" y="0" key="CommitChangelistDialog2/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594465016234" />
+    <state x="543" y="0" key="CommitChangelistDialog2/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594465661384" />
     <state x="814" y="0" width="1096" height="1012" key="CommitChangelistDialog2/0.0.1920.1016@0.0.1920.1016" timestamp="1593781829004" />
     <state x="832" y="3" width="377" height="1009" key="EnvironmentVariablesDialog" timestamp="1593784479697">
       <screen x="0" y="0" width="1920" height="1016" />
@@ -325,25 +332,25 @@
     </state>
     <state x="780" y="140" key="FileChooserDialogImpl/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594044811745" />
     <state x="1170" y="209" width="530" height="596" key="FileChooserDialogImpl/0.0.1920.1016@0.0.1920.1016" timestamp="1594379712286" />
-    <state width="1259" height="165" key="GridCell.Tab.0.bottom" timestamp="1594465595340">
+    <state width="1259" height="165" key="GridCell.Tab.0.bottom" timestamp="1594470940983">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="165" key="GridCell.Tab.0.bottom/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594465595340" />
+    <state width="1259" height="165" key="GridCell.Tab.0.bottom/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594470940983" />
     <state width="1892" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1016@0.0.1920.1016" timestamp="1594379713725" />
-    <state width="1259" height="165" key="GridCell.Tab.0.center" timestamp="1594465595340">
+    <state width="1259" height="165" key="GridCell.Tab.0.center" timestamp="1594470940982">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="165" key="GridCell.Tab.0.center/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594465595340" />
+    <state width="1259" height="165" key="GridCell.Tab.0.center/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594470940982" />
     <state width="1892" height="250" key="GridCell.Tab.0.center/0.0.1920.1016@0.0.1920.1016" timestamp="1594379713724" />
-    <state width="1259" height="165" key="GridCell.Tab.0.left" timestamp="1594465595340">
+    <state width="1259" height="165" key="GridCell.Tab.0.left" timestamp="1594470940982">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="165" key="GridCell.Tab.0.left/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594465595340" />
+    <state width="1259" height="165" key="GridCell.Tab.0.left/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594470940982" />
     <state width="1892" height="250" key="GridCell.Tab.0.left/0.0.1920.1016@0.0.1920.1016" timestamp="1594379713723" />
-    <state width="1259" height="165" key="GridCell.Tab.0.right" timestamp="1594465595340">
+    <state width="1259" height="165" key="GridCell.Tab.0.right" timestamp="1594470940982">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="165" key="GridCell.Tab.0.right/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594465595340" />
+    <state width="1259" height="165" key="GridCell.Tab.0.right/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594470940982" />
     <state width="1892" height="250" key="GridCell.Tab.0.right/0.0.1920.1016@0.0.1920.1016" timestamp="1594379713724" />
     <state width="1259" height="185" key="GridCell.Tab.1.bottom" timestamp="1594465420598">
       <screen x="0" y="0" width="1280" height="680" />
@@ -373,10 +380,10 @@
       <screen x="0" y="0" width="1920" height="1016" />
     </state>
     <state x="315" y="0" width="1280" height="1014" key="SettingsEditor/0.0.1920.1016@0.0.1920.1016" timestamp="1593784413020" />
-    <state x="466" y="121" width="1000" height="652" key="Vcs.Push.Dialog.v2" timestamp="1594465017691">
+    <state x="466" y="121" width="1000" height="652" key="Vcs.Push.Dialog.v2" timestamp="1594465663366">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="466" y="121" key="Vcs.Push.Dialog.v2/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594465017691" />
+    <state x="466" y="121" key="Vcs.Push.Dialog.v2/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594465663366" />
     <state x="910" y="181" width="1000" height="652" key="Vcs.Push.Dialog.v2/0.0.1920.1016@0.0.1920.1016" timestamp="1593781848393" />
     <state x="1060" y="100" width="760" height="816" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1591709574734">
       <screen x="0" y="0" width="1920" height="1016" />
@@ -386,6 +393,14 @@
       <screen x="0" y="0" width="1920" height="1016" />
     </state>
     <state x="1167" y="405" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1016@0.0.1920.1016" timestamp="1593781906388" />
+    <state x="1920" y="0" width="929" height="442" maximized="true" key="dock-window-1" timestamp="1594466270097">
+      <screen x="1920" y="0" width="1280" height="680" />
+    </state>
+    <state x="1920" y="0" width="929" height="442" maximized="true" key="dock-window-1/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594466270097" />
+    <state x="-1555" y="0" width="929" height="442" maximized="true" key="dock-window-2" timestamp="1594469500719">
+      <screen x="-1920" y="0" width="1280" height="680" />
+    </state>
+    <state x="-1555" y="0" width="929" height="442" maximized="true" key="dock-window-2/-1920.0.1280.680/0.0.1280.680/1920.0.1280.680@0.0.1280.680" timestamp="1594469500719" />
     <state x="407" y="0" key="git4idea.branch.GitSmartOperationDialog" timestamp="1594465337698">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

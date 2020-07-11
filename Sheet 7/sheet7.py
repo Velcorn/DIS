@@ -1,9 +1,12 @@
+import numpy as np
 from itertools import combinations
 
-# Iterate over transactions and get count of each itemset.
+# Get list of transactions.
 with open("transactions.txt", "r") as f:
     transactions = [line.strip().split(" ") for line in f.readlines()]
 
+
+# Get initial itemsets_1
 itemsets_1 = {}
 for t in transactions:
     for i in t:
@@ -16,8 +19,8 @@ for t in transactions:
 length = len(transactions)
 threshhold = 1 / 100 * length
 keys = [k for k, v in itemsets_1.items() if v < threshhold]
-for size in keys:
-    del itemsets_1[size]
+for k in keys:
+    del itemsets_1[k]
 
 # Get support as value.
 for i in itemsets_1:
@@ -27,19 +30,25 @@ for i in itemsets_1:
 print(f"There are {len(itemsets_1)} itemsets with 1 item:")
 print(sorted(itemsets_1.items(), key=lambda x: x[1], reverse=True))
 
+
 # Size of itemsets.
 size = 2
-# Number of itemsets as exit condition.
-number = len(itemsets_1)
+# Amount of itemsets as exit condition.
+amount = len(itemsets_1)
 # Only itemsets without support for iteration.
-itemsets_1 = set(itemsets_1.keys())
-itemsets = itemsets_1
-while number != 0:
+itemsets = itemsets_1.keys()
+while amount != 0:
     # Get candidates from itemsets_1.
-    candidates = set()
-    for c in set(combinations(itemsets_1, size)):
-        if all(s[0] in itemsets for s in set(combinations(c, size-1))):
-            candidates.add(c)
+    candidates = []
+    for c in combinations(itemsets_1.keys(), size):
+        if all(s[0] in itemsets for s in combinations(c, size-1)):
+            candidates.append(c)
+
+    counts = np.zeros(len(candidates))
+    for t in transactions:
+        for i in range(len(candidates)):
+            if all(e in t for e in candidates[i]):
+                counts[i] += 1
 
     itemsets_k = {}
     for t in transactions:
@@ -49,6 +58,7 @@ while number != 0:
                     itemsets_k[c] += 1
                 else:
                     itemsets_k[c] = 1
+                print(itemsets_k)
 
     keys = [k for k, v in itemsets_k.items() if v < threshhold]
     for k in keys:
@@ -65,6 +75,6 @@ while number != 0:
     print(sorted(itemsets_k.items(), key=lambda x: x[1], reverse=True))
 
     # Change variables after iteration.
-    number = len(itemsets_k)
-    itemsets = set(itemsets_k.keys())
+    amount = len(itemsets_k)
+    itemsets = itemsets_k.keys()
     size += 1
