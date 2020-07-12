@@ -22,7 +22,7 @@ threshhold = 1 / 100 * length
 for i in itemsets_1:
     itemsets_1[i] /= threshhold
 
-# Remove items below min support.
+# Remove itemsets below min support.
 keys = [k for k, v in itemsets_1.items() if v < 1]
 for k in keys:
     del itemsets_1[k]
@@ -32,17 +32,30 @@ print(f"There are {len(itemsets_1)} itemsets with 1 item:")
 print(sorted(itemsets_1.items(), key=lambda x: x[1], reverse=True))
 print("\n")
 
+# Itemsets without support for creating candidates.
+itemsets = sorted(list(itemsets_1.keys()), key=lambda x: int(x))
 # Size of itemsets.
-SIZE = 2
+K = 2
 # Number of itemsets as exit condition.
 NUMBER = len(itemsets_1)
-# Only items for creating tuples.
-items = list(itemsets_1.keys())
 while NUMBER != 0:
     # Get candidates from items.
-    candidates = [c for c in combinations(items, SIZE)]
+    if K == 2:
+        # All possible combinations if k is 2.
+        candidates = [c for c in combinations(itemsets, K)]
+    else:
+        # Combinations from previous itemsets if k > 2.
+        candidates = []
+        for i1 in itemsets:
+            for i2 in itemsets:
+                if i1[:-1] == i2[:-1] and i1[-1] < i2[-1]:
+                    c = [i for i in i1]
+                    c.append(i2[-1])
+                    # Add to candidates if all subsets are frequent itemsets.
+                    if all(s in itemsets for s in combinations(c, K-1)):
+                        candidates.append(tuple(c))
 
-    # Get count of itemsets of size k.
+    # Get counts of k-itemsets.
     itemsets_k = {}
     for t in transactions:
         for c in candidates:
@@ -52,26 +65,26 @@ while NUMBER != 0:
                 else:
                     itemsets_k[c] = 1
 
+    # Calculate support and round to 2 decimals.
     for i in itemsets_k:
         itemsets_k[i] /= threshhold
         round(itemsets_k[i], 2)
 
+    # Remove if under min support.
     keys = [k for k, v in itemsets_k.items() if v < 1]
     for k in keys:
         del itemsets_k[k]
 
     if len(itemsets_k) == 1:
-        print(f"There is {len(itemsets_k)} itemset with {SIZE} items:")
+        print(f"There is {len(itemsets_k)} itemset with {K} items:")
     else:
-        print(f"There are {len(itemsets_k)} itemsets with {SIZE} items:")
+        print(f"There are {len(itemsets_k)} itemsets with {K} items:")
     print(sorted(itemsets_k.items(), key=lambda x: x[1], reverse=True))
     print("\n")
 
     # Change variables after iteration.
+    itemsets = list(itemsets_k.keys())
     NUMBER = len(itemsets_k)
-    SIZE += 1
-    # Get unique items from nested list.
-    items = set(item for items in list(itemsets_k.keys()) for item in items)
+    K += 1
 
-end = time()
-print(f"Program finished in {round(end-start, 0)} seconds.")
+print(f"Program finished in {round(time()-start)} seconds.")
