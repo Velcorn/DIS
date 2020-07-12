@@ -53,7 +53,7 @@ while NUMBER != 0:
                     pc = list(i1)
                     pc.append(i2[-1])
                     # Add possible candidate to candidates if all subsets are frequent itemsets.
-                    if all(s in itemsets for s in combinations(pc, K - 1)):
+                    if all(s in itemsets for s in combinations(pc, K-1)):
                         candidates.append(tuple(pc))
 
     # Get counts of k-itemsets.
