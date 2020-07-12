@@ -33,7 +33,7 @@ print(sorted(itemsets_1.items(), key=lambda x: x[1], reverse=True))
 print("\n")
 
 # Itemsets without support for creating candidates.
-itemsets = sorted(list(itemsets_1.keys()), key=lambda x: int(x))
+itemsets = sorted(list(itemsets_1.keys()), key=int)
 # Size of itemsets.
 K = 2
 # Number of itemsets as exit condition.
@@ -42,14 +42,14 @@ while NUMBER != 0:
     # Get candidates from items.
     if K == 2:
         # All possible combinations if k is 2.
-        candidates = [c for c in combinations(itemsets, K)]
+        candidates = list(combinations(itemsets, K))
     else:
         # Combinations from previous itemsets if k > 2.
         candidates = []
         for i1 in itemsets:
             for i2 in itemsets:
                 if i1[:-1] == i2[:-1] and i1[-1] < i2[-1]:
-                    c = [i for i in i1]
+                    c = list(i1)
                     c.append(i2[-1])
                     # Add to candidates if all subsets are frequent itemsets.
                     if all(s in itemsets for s in combinations(c, K-1)):
