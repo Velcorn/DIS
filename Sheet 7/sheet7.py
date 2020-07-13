@@ -32,7 +32,7 @@ print(sorted(itemsets_1.items(), key=lambda x: x[1], reverse=True))
 print("\n")
 
 # Itemsets without support for creating candidates.
-itemsets = list(itemsets_1.keys())
+itemsets = sorted(list(itemsets_1.keys()))
 # Size of itemsets.
 K = 2
 # Number of itemsets as exit condition.
