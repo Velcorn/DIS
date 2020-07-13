@@ -5,7 +5,7 @@ start = time()
 
 # Transform transactions to list of sets.
 with open("transactions.txt", "r") as f:
-    transactions = [set(line.strip().split(" ")) for line in f.readlines()]
+    transactions = [set(line.strip().split()) for line in f.readlines()]
 
 # Get counts for itemsets of size 1.
 itemsets_1 = {}
@@ -77,7 +77,7 @@ while NUMBER != 0:
 
     NUMBER = len(itemsets_k)
     if NUMBER == 1:
-        print(f"There is {NUMBER} itemset with {K} items:")
+        print(f"There is {1} itemset with {K} items:")
     else:
         print(f"There are {NUMBER} itemsets with {K} items:")
     print(sorted(itemsets_k.items(), key=lambda x: x[1], reverse=True))
