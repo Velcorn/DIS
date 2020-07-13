@@ -1,5 +1,5 @@
 from time import time
-from itertools import combinations
+from itertools import chain, combinations
 
 start = time()
 
@@ -9,16 +9,15 @@ with open("transactions.txt", "r") as f:
 
 # Get counts for itemsets of size 1.
 itemsets_1 = {}
-for t in transactions:
-    for i in t:
-        if i in itemsets_1:
-            itemsets_1[i] += 1
-        else:
-            itemsets_1[i] = 1
+for i in chain(*transactions):
+    if i in itemsets_1:
+        itemsets_1[i] += 1
+    else:
+        itemsets_1[i] = 1
 
-# Calculate support.
+# Calculate supports as percentage.
 length = len(transactions)
-threshhold = 1 / 100 * length
+threshhold = length * 0.01
 for i in itemsets_1:
     itemsets_1[i] /= threshhold
 
@@ -37,7 +36,7 @@ itemsets = sorted(list(itemsets_1.keys()), key=int)
 # Size of itemsets.
 K = 2
 # Number of itemsets as exit condition.
-NUMBER = 1
+NUMBER = len(itemsets_1)
 while NUMBER != 0:
     # Get candidates from items.
     if K == 2:
@@ -66,7 +65,7 @@ while NUMBER != 0:
                 else:
                     itemsets_k[c] = 1
 
-    # Calculate support and round to 2 decimals.
+    # Calculate supports and round to 2 decimals.
     for i in itemsets_k:
         itemsets_k[i] /= threshhold
         round(itemsets_k[i], 2)
