@@ -27,7 +27,7 @@ for k in keys:
     del itemsets_1[k]
 
 # Print itemsets sorted by support.
-print(f"There are {len(itemsets_1)} itemsets with 1 item:")
+print(f"There are {len(itemsets_1)} frequent itemsets with 1 item:")
 print(sorted(itemsets_1.items(), key=lambda x: x[1], reverse=True))
 print("\n")
 
@@ -77,9 +77,9 @@ while NUMBER != 0:
 
     NUMBER = len(itemsets_k)
     if NUMBER == 1:
-        print(f"There is {1} itemset with {K} items:")
+        print(f"There is {1} frequent itemset with {K} items:")
     else:
-        print(f"There are {NUMBER} itemsets with {K} items:")
+        print(f"There are {NUMBER} frequent itemsets with {K} items:")
     print(sorted(itemsets_k.items(), key=lambda x: x[1], reverse=True))
     print("\n")
 
