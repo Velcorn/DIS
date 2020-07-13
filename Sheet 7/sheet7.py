@@ -15,9 +15,9 @@ for i in chain(*transactions):
     else:
         itemsets_1[i] = 1
 
-# Calculate support.
+# Calculate supports as percentage.
 length = len(transactions)
-threshhold = 1 / 100 * length
+threshhold = length * 0.01
 for i in itemsets_1:
     itemsets_1[i] /= threshhold
 
@@ -76,7 +76,7 @@ while NUMBER != 0:
                     else:
                         itemsets_k[c] = 1
 
-    # Calculate support and round to 2 decimals.
+    # Calculate supports and round to 2 decimals.
     for i in itemsets_k:
         itemsets_k[i] /= threshhold
         round(itemsets_k[i], 2)
@@ -86,16 +86,16 @@ while NUMBER != 0:
     for k in keys:
         del itemsets_k[k]
 
-    if len(itemsets_k) == 1:
-        print(f"There is {len(itemsets_k)} itemset with {K} items:")
+    NUMBER = len(itemsets_k)
+    if NUMBER == 1:
+        print(f"There is {NUMBER} itemset with {K} items:")
     else:
-        print(f"There are {len(itemsets_k)} itemsets with {K} items:")
+        print(f"There are {NUMBER} itemsets with {K} items:")
     print(sorted(itemsets_k.items(), key=lambda x: x[1], reverse=True))
     print("\n")
 
     # Change variables after iteration.
     itemsets = list(itemsets_k.keys())
-    NUMBER = len(itemsets_k)
     K += 1
 
 print(f"Program finished in {round(time()-start)} seconds.")
