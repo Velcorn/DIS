@@ -37,7 +37,7 @@ itemsets = sorted(list(itemsets_1.keys()), key=int)
 # Size of itemsets.
 K = 2
 # Number of itemsets as exit condition.
-NUMBER = len(itemsets_1)
+NUMBER = 1
 while NUMBER != 0:
     # Get candidates from items.
     if K == 2:
@@ -76,16 +76,16 @@ while NUMBER != 0:
     for k in keys:
         del itemsets_k[k]
 
-    if len(itemsets_k) == 1:
-        print(f"There is {len(itemsets_k)} itemset with {K} items:")
+    NUMBER = len(itemsets_k)
+    if NUMBER == 1:
+        print(f"There is {NUMBER} itemset with {K} items:")
     else:
-        print(f"There are {len(itemsets_k)} itemsets with {K} items:")
+        print(f"There are {NUMBER} itemsets with {K} items:")
     print(sorted(itemsets_k.items(), key=lambda x: x[1], reverse=True))
     print("\n")
 
     # Change variables after iteration.
     itemsets = list(itemsets_k.keys())
-    NUMBER = len(itemsets_k)
     K += 1
 
 print(f"Program finished in {round(time()-start)} seconds.")
