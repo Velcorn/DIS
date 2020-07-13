@@ -5,7 +5,7 @@ start = time()
 
 # Transform transactions to list of sets.
 with open("transactions.txt", "r") as f:
-    transactions = [sorted(line.strip().split(" "),key=int) for line in f.readlines()]
+    transactions = [set(line.strip().split(" ")) for line in f.readlines()]
 
 # Get counts for itemsets of size 1.
 itemsets_1 = {}
@@ -57,13 +57,24 @@ while NUMBER != 0:
 
     # Get counts of k-itemsets.
     itemsets_k = {}
-    for t in transactions:
-        subsets = combinations(t, K)
-        for s in subsets:
+    if len(candidates) > 10000:
+        # Iterate subsets of transaction for each transaction if more than x candidates.
+        for t in transactions:
+            subsets = combinations(sorted(list(t)), K)
+            for s in subsets:
                 if s in itemsets_k:
                     itemsets_k[s] += 1
                 else:
                     itemsets_k[s] = 1
+    else:
+        # Iterate all candidates for each transaction otherwise (normal apriori algorithm).
+        for t in transactions:
+            for c in candidates:
+                if t.issuperset(c):
+                    if c in itemsets_k:
+                        itemsets_k[c] += 1
+                    else:
+                        itemsets_k[c] = 1
 
     # Calculate support and round to 2 decimals.
     for i in itemsets_k:
